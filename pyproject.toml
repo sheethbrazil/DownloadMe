@@ -1,0 +1,30 @@
+[project]
+name = "downloadme"
+version = "1.0.0"
+description = "DownloadMe media downloader"
+requires-python = ">=3.10"
+dependencies = [
+  "flet==0.28.3",
+  "yt-dlp",
+  "mutagen",
+  "certifi",
+]
+
+[tool.flet]
+org = "com.downloadme"
+product = "DownloadMe"
+company = "DownloadMe"
+copyright = "DownloadMe"
+
+[tool.flet.splash]
+color = "#06080F"
+dark_color = "#06080F"
+
+[tool.flet.android]
+adaptive_icon_background = "#0B1226"
+
+[tool.flet.android.permission]
+"android.permission.INTERNET" = true
+"android.permission.WRITE_EXTERNAL_STORAGE" = true
+"android.permission.READ_EXTERNAL_STORAGE" = true
+"android.permission.MANAGE_EXTERNAL_STORAGE" = true
